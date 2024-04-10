@@ -118,7 +118,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.qcom \
-    device/xiaomi/garnet/device_framework_matrix.xml:system/etc/vintf/compatibility_matrix.xml
+    device/xiaomi/garnet/device_framework_matrix.xml:vintf_fragments/etc/vintf/compatibility_matrix.xml
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
