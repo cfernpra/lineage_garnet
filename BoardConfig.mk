@@ -17,6 +17,9 @@ AB_OTA_PARTITIONS += \
     system_ext
 BOARD_USES_RECOVERY_AS_BOOT := true
 
+#Kernel Binary
+KERNEL_PREBUILT_DIR := $(DEVICE_PATH)/prebuilts/kernel
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -49,7 +52,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 #BOARD_KERNEL_IMAGE_NAME := Image
 #BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 #BOARD_KERNEL_SEPARATED_DTBO := true
-#TARGET_KERNEL_CONFIG := garnet_defconfig
+TARGET_KERNEL_CONFIG := garnet_defconfig
 #TARGET_KERNEL_SOURCE := kernel/xiaomi/garnet
 
 # Kernel - prebuilt
