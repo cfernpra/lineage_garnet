@@ -117,7 +117,8 @@ PRODUCT_PACKAGES += \
    # miui.factoryreset.rc 
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.qcom
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.qcom \
+    device/xiaomi/garnet/device_framework_matrix.xml:system/etc/vintf/compatibility_matrix.xml
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
